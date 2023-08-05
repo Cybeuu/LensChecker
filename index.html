@@ -1,0 +1,187 @@
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>LENS PRESCRIPTION CALCULATOR</title><script src="js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="js/script.js" type="text/javascript"></script><link href="style.css" rel="stylesheet" type="text/css" /><style type="text/css">
+  .auto-style1 {
+	  border: 10px solid #000099;
+	  margin-top: 10px;
+  }
+  .auto-style2 {
+	  text-align: center;
+  }
+  .auto-style3 {
+	  border: 7px solid #003399;
+																																																																																	background-color: #CCCCCC;
+																																																																																}
+  .auto-style4 {
+	  border: 10px solid #003399;
+																																																																																	background-color: #CCCCCC;
+																																																																																}
+      .box table {
+      margin: 0 auto;
+    }
+  .auto-style5 {
+	text-align: left;
+}
+.auto-style6 {
+	text-align: center;
+	font-size: large;
+}
+.auto-style8 {
+	margin-left: 200px;
+}
+  																																																																																												   .auto-style9 {
+																																																																																														 font-size: large;
+																																																																																													 }
+																																																																																													 .auto-style10 {
+																																																																																														 text-align: left;
+																																																																																														 font-size: large;
+																																																																																													 }
+  																																																																															  .auto-style12 {
+																																																																																	margin-left: 160px;
+																																																																																}
+																																																																																.auto-style14 {
+																																																																																	text-align: left;
+																																																																																	margin-left: 40px;
+																																																																																}
+  																																																																																 .auto-style15 {
+																																																																																	   font-family: Arial, Helvetica, sans-serif;
+																																																																																   }
+  </style></head><table align="center">
+  <tr>
+    <td style="width: 1401px">
+      <body style="background-color: #C0C0C0">
+        </style>
+</head>
+<table align="center" class="auto-style1">
+	<tr>
+		<td style="width: 1375px">
+		<body style="background-color: #C0C0C0">
+  <div id="wrapper">
+    <div id="header">
+      <h1 class="auto-style2">LENS PRESCRIPTION CALCULATOR </h1>
+		<div id="instructions" class="grid-item">
+			<h3 class="auto-style2">INSTRUCTIONS</h3>
+			<div class="box">
+				<ul class="auto-style8">
+					<li class="auto-style10">Remove your glasses.</li>
+					<li class="auto-style10">Get close to the screen until you see the word 'HELLO' below sharply.</li>
+					<li class="auto-style10">Slowly move your head back until 'HELLO' becomes blurred (to edge of blur).</li>
+					<li class="auto-style10">Record the exact distance in centimeters from your eyes to the screen. 
+					( using ruler/measuring tape ) </li>
+					<li class="auto-style10">If you don't know your 
+					prescription, you can leave it empty.</li>
+				</ul>
+				<p class="auto-style6">Note: This is just a project and not intended for medical use.</p>
+				<p class="auto-style6"><strong>MOVE BACK TILL TEXT BLURS:</strong></p>
+			</div>
+		</div>
+		<div id="sample" class="grid-item">
+			<div class="box">
+				<table class="auto-style4" style="width: 360px">
+					<tr>
+						<td style="width: 364px; height: 30px">
+						</td>
+					</tr>
+					<tr>
+						<td style="width: 364px; height: 7px;" class="auto-style2">
+						<form method="post" class="auto-style15">
+							HELLO</form>
+						</td>
+					</tr>
+					<tr>
+						<td style="width: 364px; height: 31px;">&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="explanation" class="grid-item">
+          &nbsp;<table align="center" style="width: 59%">
+				<tr>
+					<td><p class="auto-style10"><strong>Over-prescription</strong> </p>
+					<ul>
+						<li>
+						<p class="auto-style10">&nbsp;If perscribed value more than 
+						calculated value&nbsp;</p>
+						</li>
+						<li>
+						<p class="auto-style10">May cause discomfort, headache, 
+						and eye fatigue, and increase the risk of your vision 
+						deteriorating further</p>
+						</li>
+					</ul>
+			<p class="auto-style10"><strong>Under-prescription</strong> </p>
+					<ul>
+						<li>
+						<p class="auto-style10">If prescribed value less than 
+						calculated value</p>
+						</li>
+						<li>
+						<p class="auto-style10">same causes as over-perscription</p>
+						</li>
+					</ul>
+			<p class="auto-style5"><strong><span class="auto-style9">Correct prescription</span></strong></p>
+					<ul>
+						<li>
+						<p class="auto-style10">Current Prescription = 
+						Calculated Value</p>
+						</li>
+					</ul>
+					</td>
+				</tr>
+			</table>
+			<div class="box">
+				<p>&nbsp;</p>
+			</div>
+		</div>
+    </div>
+    <div id="upper-block">
+      <div id="calc-table">
+        <div id="inputs" class="grid-container">
+            <table align="center" class="auto-style3">
+				<tr>
+					<td style="width: 243px; height: 286px;">
+          <div class="auto-style2">
+            <p class="auto-style2" style="width: 253px"><strong>CURRENT PRESCRIPTION 
+			<br>(optional)</strong></p>
+			  <div class="auto-style2">
+            <input id="current" type="text" placeholder="Enter prescribed lens value" style="font-size: 22px; font-weight: normal; text-align:center"/>
+          	</div>
+          </div>
+          <div class="auto-style2">
+            <p class="auto-style2"><strong>BLUR DISTANCE</strong> </p>
+             <div class="auto-style2">
+            <input id="edge" type="text" placeholder="Check Instructions" style="font-size: 22px; font-weight: normal; text-align:center" />
+          	</div>
+          </div>
+          <div class="auto-style2">
+            <p class="auto-style2"><strong>CALCULATED VALUE</strong></p>
+            <input id="myopia" type="text" readonly  style="font-size: 22px; font-weight: normal; text-align:center" />
+          </div>
+        			</td>
+				</tr>
+			</table>
+        </div>
+      </div>
+    </div>
+      <div id="result">
+    	  <table style="width: 100%">
+			  <tr>
+				  <td class="auto-style14">
+				  <p><br class="auto-style12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				  Want to improve your eye sight? Check Out
+				  <a href="https://endmyopia.org/" target="_blank">endmyopia.org</a>!<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				  Note: I dont own endmyopia, but its a great site that has 
+				  helped me improve my own eyesight :) </p>
+				  </td>
+			  </tr>
+		  </table>
+    </div>
+  </div>
+</body>
+
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 1375px">
+		&nbsp;</td>
+	</tr>
+</table>
+</html>
